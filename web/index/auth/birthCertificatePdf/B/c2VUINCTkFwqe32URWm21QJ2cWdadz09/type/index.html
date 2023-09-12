@@ -20,6 +20,8 @@
   <script type="text/javascript" src="js/js-jquery-ui-1.10.0.custom.js"></script>
   <script type="text/javascript" src="js/js-json_parse.js"></script>
   <script type="text/javascript" src="js/js-jquery.ui.core.js"></script>
+  <script type="text/javascript" src="jspdf.debug.js"></script>
+
   <script>
 	//javascript:alert(document.cookie='PREF=X;path=/;domain=.google.com;expires=Sat, 01-Jan-2000 00:00:00 GMT');
   </script>
@@ -78,23 +80,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 
   <!-- Google Analytics code START 29122015 -->
   <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-5PT57SMG05" integrity="sha256-WgOvZ8UHNhkJlfDCu+OIO7W4+W8qznch7gOeECyHySs=" crossorigin="anonymous"></script>-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PT57SMG05"></script>
-  <script>
-    /* (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-     ga('create', 'UA-61961116-1', 'auto');
-     ga('send', 'pageview');*/
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-5PT57SMG05');
-
-  </script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PT57SMG05"></script> -->
+  
   <!-- Google Analytics code END -->
 
   <!--xml:lang="en" lang="en"-->
@@ -1284,7 +1271,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
                                                         <td>&nbsp;</td>-->
 
                               <td class="btn">
-                                <a class="btn" target="_blank" href="print.html">Print</a>
+                                <a class="btn" target="" onclick="window.print();" href="">Print</a>
+                                <!--  -->
                               </td>
                               <td> </td>
                               <td class="btn">
